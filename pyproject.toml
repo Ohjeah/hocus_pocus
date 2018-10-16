@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "invocations"
+version = "0.1.0"
+description = ""
+license = "MIT"
+authors = ["Markus Quade <info@markusqua.de>"]
+readme = "README.md"
+repository = "https://github.com/Ohjeah/invocations"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+invoke = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
