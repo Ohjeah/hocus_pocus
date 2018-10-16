@@ -1,3 +1,6 @@
+[build-system]
+requires = ["poetry"]
+
 [tool.poetry]
 name = "invocations"
 version = "0.1.0"
