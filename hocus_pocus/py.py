@@ -6,7 +6,9 @@ from .util import safe_checkout
 @task
 def upload(ctx):
     # from twine.commands import upload
-    print("twine upload --repository-url https://$PYPI_SERVER --username $PYPI_USER --password $PYPI_SERVER_PW --skip-existing $WHEELHOUSE/*")
+    print(
+        "twine upload --repository-url https://$PYPI_SERVER --username $PYPI_USER --password $PYPI_SERVER_PW --skip-existing $WHEELHOUSE/*"
+    )
 
 
 @task(post=[upload])

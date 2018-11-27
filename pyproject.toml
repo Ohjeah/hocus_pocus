@@ -2,7 +2,7 @@
 requires = ["poetry"]
 
 [tool.poetry]
-name = "invocations"
+name = "hocus_pocus"
 version = "0.1.0"
 description = ""
 license = "MIT"
@@ -16,3 +16,21 @@ invoke = "*"
 
 [tool.poetry.dev-dependencies]
 pytest = "*"
+
+[tool.black]
+line-length = 111
+py36 = true
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
