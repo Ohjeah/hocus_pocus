@@ -23,5 +23,5 @@ def compile_latex(ctx, texfile=None, sources=(), latex=LATEX):
         target = texfile.with_suffix(".pdf")
         if needs_compile(target, (texfile,) + tuple(sources)):
             print(f"Compiling {texfile}")
-            ctx.run(f"{latex} {texfile.name}")
+            result = ctx.run(f"{latex} {texfile.name}", hide=True, warn=True)
     return target
